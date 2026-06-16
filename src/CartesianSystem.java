@@ -34,5 +34,13 @@ public class CartesianSystem {
         //using java equals is strictly necessary
         boolean equal = length1.equals(length2);
         System.out.println("The length of the two line are same: " + equal);
+        int compare = length1.compareTo(length2);
+        if(compare == 0) {
+            System.out.println("Both the lines are equal");
+        } else if (compare < 0) {
+            System.out.println("length of line 1 is more than length of line 2");
+        } else {
+            System.out.println("Length of line 1 is less than length of line 2");
+        }
     }
 }
